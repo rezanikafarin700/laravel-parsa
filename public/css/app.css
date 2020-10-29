@@ -1,0 +1,81 @@
+html,
+body {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+#layout #header {
+  height: 50px;
+  background-color: orange;
+}
+
+#layout #parent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#layout #parent #main {
+  flex: 1 1 auto;
+  background-color: blue;
+}
+
+#layout #parent #main #content {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#layout #parent #main #content > table {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 100%;
+}
+
+#layout #parent #main #content > table td,
+#layout #parent #main #content > table th {
+  padding: 10px;
+}
+
+#layout #parent #main #content > table tr a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#layout #parent #nav {
+  flex: 0 0 300px;
+  background-color: red;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.my-form label {
+  font-weight: bold;
+}
+
+.my-form input {
+  width: 100%;
+}
+
+.box-white {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+

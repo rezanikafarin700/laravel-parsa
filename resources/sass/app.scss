@@ -1,0 +1,101 @@
+html, body {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+#layout {
+    #header {
+        height: 50px;
+        background-color: orange;
+    }
+
+    #parent {
+
+        display: flex;
+        flex-direction: row-reverse;
+
+
+        #main {
+            flex: 1 1 auto;
+            background-color: blue;
+
+
+            #content {
+
+                min-height: 100vh;
+                padding: 20px;
+
+                > table {
+                    background-color: rgba(0, 0, 0, .5);
+                    color: #ffffff;
+                    width: 100%;
+
+                    td, th {
+                        padding: 10px;
+                    }
+
+                    tr {
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+
+
+        #nav {
+            flex: 0 0 300px;
+            background-color: red;
+        }
+
+    }
+
+
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.my-form {
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+.box-white {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+
+
